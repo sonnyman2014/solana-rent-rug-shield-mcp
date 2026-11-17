@@ -1,0 +1,45 @@
+{
+  "name": "@rentandrugshield/mcp-server",
+  "version": "1.0.0",
+  "mcpName": "io.github.sonnyman2014/solana-rent-rug-shield-mcp",
+  "description": "Solana pre-buy 10-layer token rug audit (<120ms), Layer-9 Inner-CPI transaction drain simulator, and read-only unclaimed ATA SOL rent scanner with native Solana x402 auto-pay.",
+  "license": "MIT",
+  "type": "module",
+  "main": "./packages/mcp-server/dist/index.js",
+  "types": "./packages/mcp-server/dist/index.d.ts",
+  "bin": {
+    "rentandrugshield-mcp": "./packages/mcp-server/dist/index.js",
+    "mcp-server": "./packages/mcp-server/dist/index.js"
+  },
+  "scripts": {
+    "build": "npm --prefix packages/mcp-server install --no-audit --no-fund && npm --prefix packages/mcp-server run build",
+    "start": "node ./packages/mcp-server/dist/index.js",
+    "test": "npm --prefix packages/mcp-server test"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "solana",
+    "x402",
+    "rug-shield",
+    "token-audit",
+    "cpi-drainer",
+    "ata-rent",
+    "token-2022",
+    "defi-security"
+  ],
+  "homepage": "https://rentandrugshield.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sonnyman2014/solana-rent-rug-shield-mcp.git"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "@solana/web3.js": "^1.95.8",
+    "bs58": "^6.0.0",
+    "zod": "^3.23.8"
+  }
+}
