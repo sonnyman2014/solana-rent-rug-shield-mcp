@@ -1,0 +1,48 @@
+# Zero-Install Remote Streamable HTTP MCP also live at: https://rentandrugshield.com/mcp
+# Smithery MCP Registry Configuration for @rentandrugshield/mcp-server
+build:
+  dockerfile: Dockerfile
+  dockerBuildPath: .
+
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    required: []
+    properties:
+      rentshieldApiUrl:
+        type: string
+        default: "https://rentandrugshield.com"
+        description: "Upstream Rent and Rug Shield API gateway URL (10 free pings included automatically)"
+      solanaPrivateKey:
+        type: string
+        description: "Optional base58 or JSON byte array Solana keypair for automatic HTTP 402 x402 SOL machine auto-pay"
+      x402Option:
+        type: string
+        default: "option_a_pro_pass"
+        enum:
+          - "option_a_pro_pass"
+          - "option_b_single_scan"
+        description: "Solana x402 payment tier: option_a_pro_pass (0.026 SOL / $1.99 Unlimited Pro Pass) or option_b_single_scan (0.0003 SOL / $0.02 single scan)"
+      proPassToken:
+        type: string
+        description: "Optional cached X-Pro-Pass-Token for unlimited Pro Pass requests"
+      solanaRpcUrl:
+        type: string
+        default: "https://api.mainnet-beta.solana.com"
+        description: "Solana Mainnet JSON-RPC URL used when signing and broadcasting automatic x402 transfers"
+  commandFunction: |-
+    (config) => ({
+      command: 'npx',
+      args: ['-y', '@rentandrugshield/mcp-server'],
+      env: {
+        RENTSHIELD_API_URL: (config && config.rentshieldApiUrl) ? config.rentshieldApiUrl : 'https://rentandrugshield.com',
+        ...(config && config.solanaPrivateKey ? { SOLANA_PRIVATE_KEY: config.solanaPrivateKey } : {}),
+        ...(config && config.x402Option ? { X402_OPTION: config.x402Option } : {}),
+        ...(config && config.proPassToken ? { RENTSHIELD_PRO_PASS_TOKEN: config.proPassToken } : {}),
+        ...(config && config.solanaRpcUrl ? { SOLANA_RPC_URL: config.solanaRpcUrl } : {})
+      }
+    })
+  exampleConfig:
+    rentshieldApiUrl: "https://rentandrugshield.com"
+    x402Option: "option_a_pro_pass"

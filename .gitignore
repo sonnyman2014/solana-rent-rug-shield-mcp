@@ -1,0 +1,10 @@
+node_modules/
+__pycache__/
+*.py[cod]
+*.egg-info/
+packages/pypi-sdk/dist/
+packages/pypi-sdk/build/
+*.tgz
+*.whl
+.env
+.DS_Store
