@@ -1,5 +1,19 @@
 # Solana Rent & Rug Shield on MCP.so (`@rentandrugshield/mcp-server` & `solana-rug-shield`)
 
+* **Name:** Solana Rent and Rug Shield MCP Gateway
+* **Type:** Remote MCP server (Streamable HTTP) and Local Stdio (`npx` and `pip`)
+* **Description:** Production Solana security MCP server delivering a `<120ms` 10-layer pre-buy token anti-rug safety gate (`audit_solana_token_10_layer`), Layer 9 Inner CPI transaction drainer simulator (`simulate_solana_tx_drain`), and strictly read-only SPL and Token-2022 unclaimed ATA SOL rent scanner (`scan_wallet_unclaimed_sol`) with 10 free pings and native Solana `x402` machine auto-pay.
+* **Endpoint:** https://rentandrugshield.com/mcp (and live dynamic Streamable HTTP transport https://rolled-raleigh-chair-shakespeare.trycloudflare.com/mcp)
+* **Official MCP Registry:** `com.rentandrugshield/mcp-server` and `io.github.sonnyman2014/solana-rent-rug-shield-mcp`
+* **Authentication:** None required for 10 free pings per `X-Agent-Id`; automatic Solana `x402` V1 and V2 (`PAYMENT-SIGNATURE` and `X-Payment`) settlement after free tier
+* **Homepage:** https://rentandrugshield.com
+* **Repository:** https://github.com/sonnyman2014/solana-rent-rug-shield-mcp
+* **Release Packages (`v1.0.0`):** `npx -y https://github.com/sonnyman2014/solana-rent-rug-shield-mcp/releases/download/v1.0.0/rentandrugshield-mcp-server-1.0.0.tgz` and `pip install https://github.com/sonnyman2014/solana-rent-rug-shield-mcp/releases/download/v1.0.0/solana_rug_shield-1.0.0-py3-none-any.whl`
+* **Category:** Security, Blockchain, Developer Tools
+* **Tags:** solana, mcp, x402, defi-security, rug-check, token-2022, ata-rent, ai-agents
+* **Pricing:** 10 free pings included with no API key or credit card; `0.026 SOL` (`$1.99` Unlimited Pro Pass) or `0.0003 SOL` (`~$0.02` single scan) to Solana treasury `89Sv5FvnMNRid1bn8y2Ti1vJPSxWxgiW9GSLsPpBnKK1`
+
+
 Official MCP.so submission listing for Solana Rent & Rug Shield, delivering institutional-grade pre-buy token rug auditing (`<120ms`), Layer 9 Inner CPI transaction drainer simulation, and read-only wallet ATA SOL rent scanning via [https://rentandrugshield.com](https://rentandrugshield.com) with native Solana `x402` auto-pay.
 
 * **MCP.so Slug**: `solana-rent-and-rug-shield` (`registry/mcp_so_submission.json`)

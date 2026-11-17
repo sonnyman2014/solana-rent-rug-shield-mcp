@@ -9,164 +9,21 @@
     "url": "https://github.com/sonnyman2014/solana-rent-rug-shield-mcp",
     "source": "github"
   },
-  "packages": [
-    {
-      "registryType": "npm",
-      "registryBaseUrl": "https://registry.npmjs.org",
-      "identifier": "@rentandrugshield/mcp-server",
-      "version": "1.0.0",
-      "runtimeHint": "npx",
-      "transport": {
-        "type": "stdio"
-      },
-      "environmentVariables": [
-        {
-          "name": "RENTSHIELD_API_URL",
-          "description": "Upstream Rent and Rug Shield gateway URL",
-          "default": "https://rentandrugshield.com",
-          "format": "string",
-          "isRequired": false,
-          "isSecret": false
-        },
-        {
-          "name": "SOLANA_PRIVATE_KEY",
-          "description": "Optional base58 or JSON byte array Solana keypair for automatic HTTP 402 x402 SOL payment",
-          "format": "string",
-          "isRequired": false,
-          "isSecret": true
-        },
-        {
-          "name": "X402_SOLANA_PRIVATE_KEY",
-          "description": "Optional alias for SOLANA_PRIVATE_KEY dedicated to autonomous x402 agent settlements",
-          "format": "string",
-          "isRequired": false,
-          "isSecret": true
-        },
-        {
-          "name": "X402_OPTION",
-          "description": "Preferred Solana x402 settlement tier upon HTTP 402 challenge",
-          "default": "option_a_pro_pass",
-          "choices": [
-            "option_a_pro_pass",
-            "option_b_single_scan"
-          ],
-          "format": "string",
-          "isRequired": false,
-          "isSecret": false
-        },
-        {
-          "name": "RENTSHIELD_PRO_PASS_TOKEN",
-          "description": "Optional cached X-Pro-Pass-Token issued after an Option A 0.026 SOL Unlimited Pro Pass upgrade",
-          "format": "string",
-          "isRequired": false,
-          "isSecret": true
-        },
-        {
-          "name": "SOLANA_RPC_URL",
-          "description": "Solana Mainnet JSON-RPC endpoint used when broadcasting automatic x402 transfers",
-          "default": "https://api.mainnet-beta.solana.com",
-          "format": "string",
-          "isRequired": false,
-          "isSecret": false
-        }
-      ]
-    },
-    {
-      "registryType": "pypi",
-      "registryBaseUrl": "https://pypi.org",
-      "identifier": "solana-rug-shield",
-      "version": "1.0.0",
-      "runtimeHint": "uvx",
-      "packageArguments": [
-        {
-          "type": "named",
-          "name": "--mcp-stdio",
-          "description": "Launch solana-rug-shield in MCP JSON-RPC 2.0 stdio server mode",
-          "isRequired": true
-        }
-      ],
-      "transport": {
-        "type": "stdio"
-      },
-      "environmentVariables": [
-        {
-          "name": "RENTSHIELD_API_URL",
-          "description": "Upstream Rent and Rug Shield gateway URL",
-          "default": "https://rentandrugshield.com",
-          "format": "string",
-          "isRequired": false,
-          "isSecret": false
-        },
-        {
-          "name": "SOLANA_PRIVATE_KEY",
-          "description": "Optional base58 or JSON byte array Solana keypair for automatic HTTP 402 x402 SOL payment",
-          "format": "string",
-          "isRequired": false,
-          "isSecret": true
-        },
-        {
-          "name": "X402_SOLANA_PRIVATE_KEY",
-          "description": "Optional alias for SOLANA_PRIVATE_KEY dedicated to autonomous x402 agent settlements",
-          "format": "string",
-          "isRequired": false,
-          "isSecret": true
-        },
-        {
-          "name": "X402_OPTION",
-          "description": "Preferred Solana x402 settlement tier upon HTTP 402 challenge",
-          "default": "option_a_pro_pass",
-          "choices": [
-            "option_a_pro_pass",
-            "option_b_single_scan"
-          ],
-          "format": "string",
-          "isRequired": false,
-          "isSecret": false
-        },
-        {
-          "name": "RENTSHIELD_PRO_PASS_TOKEN",
-          "description": "Optional cached X-Pro-Pass-Token issued after an Option A 0.026 SOL Unlimited Pro Pass upgrade",
-          "format": "string",
-          "isRequired": false,
-          "isSecret": true
-        },
-        {
-          "name": "SOLANA_RPC_URL",
-          "description": "Solana Mainnet JSON-RPC endpoint used when broadcasting automatic x402 transfers",
-          "default": "https://api.mainnet-beta.solana.com",
-          "format": "string",
-          "isRequired": false,
-          "isSecret": false
-        }
-      ]
-    }
-  ],
   "_meta": {
     "io.modelcontextprotocol.registry/publisher-provided": {
       "alternateNamespace": "com.rentandrugshield/mcp-server",
       "gatewayUrl": "https://rentandrugshield.com",
+      "remoteMcpEndpoint": "https://rentandrugshield.com/mcp",
+      "wellKnownMcp": "https://rentandrugshield.com/.well-known/mcp.json",
+      "wellKnownX402": "https://rentandrugshield.com/.well-known/x402",
+      "distributions": {
+        "npm": "@rentandrugshield/mcp-server",
+        "pypi": "solana-rug-shield"
+      },
       "tools": [
-        {
-          "name": "audit_solana_token_10_layer",
-          "summary": "<120ms 10-layer pre-buy Solana SPL and Token-2022 anti-rug safety gate",
-          "requiredInputs": [
-            "mint"
-          ]
-        },
-        {
-          "name": "simulate_solana_tx_drain",
-          "summary": "Layer 9 Inner CPI Solana transaction drainer and authority hijack simulator",
-          "requiredInputs": [
-            "transaction"
-          ]
-        },
-        {
-          "name": "scan_wallet_unclaimed_sol",
-          "summary": "Read-only SPL, Token-2022, and PumpSwap/Pump PDA unclaimed ATA SOL rent scanner",
-          "requiredInputs": [
-            "wallet"
-          ]
-        }
+        "audit_solana_token_10_layer",
+        "simulate_solana_tx_drain",
+        "scan_wallet_unclaimed_sol"
       ],
       "x402": {
         "network": "solana:mainnet-beta",
@@ -176,26 +33,27 @@
           "id": "option_a_pro_pass",
           "sol": "0.026",
           "lamports": 26000000,
-          "usd": "1.99",
-          "tier": "Unlimited Pro Pass"
+          "usd": "1.99"
         },
         "optionB": {
           "id": "option_b_single_scan",
           "sol": "0.0003",
           "lamports": 300000,
-          "usd": "0.02",
-          "tier": "Instant Single Scan"
+          "usd": "0.02"
         }
       },
-      "remoteMcpEndpoint": "https://rentandrugshield.com/mcp",
-      "wellKnownMcp": "https://rentandrugshield.com/.well-known/mcp.json",
-      "wellKnownX402": "https://rentandrugshield.com/.well-known/x402"
+      "liveStreamableHttpEndpoint": "https://rolled-raleigh-chair-shakespeare.trycloudflare.com/mcp",
+      "releaseTag": "v1.0.0"
     }
   },
   "remotes": [
     {
       "type": "streamable-http",
       "url": "https://rentandrugshield.com/mcp"
+    },
+    {
+      "type": "streamable-http",
+      "url": "https://rolled-raleigh-chair-shakespeare.trycloudflare.com/mcp"
     }
   ]
 }

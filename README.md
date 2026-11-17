@@ -62,6 +62,13 @@ rent = client.scan_wallet_unclaimed_sol(
 )
 ```
 
+### Direct GitHub Release `v1.0.0` Install (Zero Registry Wait)
+
+```bash
+npx -y https://github.com/sonnyman2014/solana-rent-rug-shield-mcp/releases/download/v1.0.0/rentandrugshield-mcp-server-1.0.0.tgz
+pip install https://github.com/sonnyman2014/solana-rent-rug-shield-mcp/releases/download/v1.0.0/solana_rug_shield-1.0.0-py3-none-any.whl
+```
+
 ## Core Solana Security Tools (3 MCP Tools)
 
 ### 1. `audit_solana_token_10_layer` (`<120ms` Pre-Buy Token Safety Gate)
