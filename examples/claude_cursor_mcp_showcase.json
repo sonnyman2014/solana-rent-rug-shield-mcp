@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "solana-rent-and-rug-shield-remote": {
+      "url": "https://rentandrugshield.com/mcp",
+      "transport": "streamable-http",
+      "description": "Zero-install Solana 10-layer pre-buy rug audit, Layer-9 CPI drain simulator, and 0x09 ATA rent scanner (1st Rent Claim 100% FREE: 0 lamports fee on Claim #1)"
+    },
+    "solana-rent-and-rug-shield-npx": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@rentandrugshield/mcp-server"
+      ],
+      "env": {
+        "RENTSHIELD_API_URL": "https://rentandrugshield.com"
+      }
+    }
+  }
+}
