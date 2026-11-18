@@ -1,6 +1,6 @@
 # Solana On-Chain Rug Autopsies, 0x09 Rent Recovery & MCP Integration Index
 
-Updated: `2026-11-18T01:31:27Z` | Author: `GS`
+Updated: `2026-11-18T01:31:27Z` | Maintainer: `Rent & Rug Shield`
 
 ## Live MCP & Registry Endpoints
 - Web Scanner & 0-Lamport 1st Rent Claim: https://rentandrugshield.com
@@ -30,4 +30,4 @@ Updated: `2026-11-18T01:31:27Z` | Author: `GS`
 - Clean Canonical `.pump` Graduation (`$JESTER`, Score `100/100`): https://solscan.io/tx/1GEV79q11dpjqgNg9KgNYn88LC6N5w4V1Y9zzNUxv45DMdoH6Wq3T4NH3JNKZ4YpuxmTNsK8Ew9BRpJBnuouRbq | Audit: https://rentandrugshield.com/audit/t4U9Fjb9hCfg3RE5ZZteMurs2zTK9MP6aqG1t5Epump
 - Native SPL `0x09 CloseAccount` Rent Recovery Proof: https://solscan.io/tx/3vb1bfJKzHgeKS3CyWXjmf7h8AACPmnykaUEcEtkwNtNhk1ht86vbCLuqwrrB6z25rxPm2iBVaBw6F23dK3nkZhu
 
-Thank you. Prepared by GS.
+Thank you. Rent & Rug Shield Security Team.

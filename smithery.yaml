@@ -1,4 +1,5 @@
-# Zero-Install Remote Streamable HTTP MCP also live at: https://rentandrugshield.com/mcp
+# Zero-Install Remote Streamable HTTP MCP: https://rentandrugshield.com/mcp
+# Founding B2B Enterprise API ($500/mo SLA): https://rentandrugshield.com/enterprise-api.html
 # Smithery MCP Registry Configuration for @rentandrugshield/mcp-server
 build:
   dockerfile: Dockerfile

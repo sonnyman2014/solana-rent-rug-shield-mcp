@@ -11,6 +11,14 @@ Production Model Context Protocol (`MCP`) security gateway and `x402` Solana mac
 * **Production Upstream Gateway**: [https://rentandrugshield.com](https://rentandrugshield.com)
 * **Official MCP Registry Namespace**: `io.github.sonnyman2014/solana-rent-rug-shield-mcp` and `com.rentandrugshield/mcp-server`
 
+## Founding B2B Enterprise API ($500/mo Unlimited SLA)
+
+Building a Solana wallet, Telegram sniper bot, copy-trading engine, or DeFi terminal? Upgrade from per-call `x402` to dedicated institutional throughput at [https://rentandrugshield.com/enterprise-api.html](https://rentandrugshield.com/enterprise-api.html):
+
+* **Founding Partner Flat Tier (`$500/mo`)**: Dedicated API key (`X-Enterprise-Api-Key`), `<120ms` warm-socket SLA on 10-Layer Pre-Buy Token Audits (`/api/scan/token`), Layer 9 Inner CPI Drain Simulation (`/api/simulate/tx`), and Batch Non-Custodial SPL `CloseAccount` Rent Discovery (`/api/scan/wallet`).
+* **Zero Blind Approvals**: 100% read-only token/wallet scanning and unsigned client-verified transaction building.
+* **Enterprise Docs & Onboarding**: [https://rentandrugshield.com/enterprise-api.html](https://rentandrugshield.com/enterprise-api.html) | Live Consumer & Developer Portal: [https://rentandrugshield.com](https://rentandrugshield.com)
+
 ## Zero-Install Remote Streamable HTTP MCP (`https://rentandrugshield.com/mcp`)
 
 Connect any Streamable HTTP MCP client (`Claude`, `Cursor`, `Windsurf`, `Cline`, `OpenAI Agents`, `LangGraph`) directly with **zero local installation**:

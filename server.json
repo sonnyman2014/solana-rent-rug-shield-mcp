@@ -3,7 +3,7 @@
   "name": "io.github.sonnyman2014/solana-rent-rug-shield-mcp",
   "title": "Solana Rent & Rug Shield MCP Gateway",
   "description": "Solana 10-layer token rug audit, CPI tx drain simulator, and ATA rent scanner via x402.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://rentandrugshield.com",
   "repository": {
     "url": "https://github.com/sonnyman2014/solana-rent-rug-shield-mcp",
@@ -43,7 +43,9 @@
         }
       },
       "liveStreamableHttpEndpoint": "https://rolled-raleigh-chair-shakespeare.trycloudflare.com/mcp",
-      "releaseTag": "v1.0.0"
+      "releaseTag": "v1.0.0",
+      "enterpriseApiUrl": "https://rentandrugshield.com/enterprise-api.html",
+      "foundingB2BTier": "$500/mo Unlimited SLA (https://rentandrugshield.com/enterprise-api.html)"
     }
   },
   "remotes": [
