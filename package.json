@@ -2,7 +2,7 @@
   "name": "@rentandrugshield/mcp-server",
   "version": "1.0.0",
   "mcpName": "io.github.sonnyman2014/solana-rent-rug-shield-mcp",
-  "description": "Solana pre-buy 10-layer token rug audit (<120ms), Layer-9 Inner-CPI transaction drain simulator, and read-only unclaimed ATA SOL rent scanner with native Solana x402 auto-pay.",
+  "description": "Solana pre-buy 11-layer token rug audit (<120ms), Layer-9 Inner-CPI transaction drain simulator, and read-only unclaimed ATA SOL rent scanner with native Solana x402 auto-pay.",
   "license": "MIT",
   "type": "module",
   "main": "./packages/mcp-server/dist/index.js",
