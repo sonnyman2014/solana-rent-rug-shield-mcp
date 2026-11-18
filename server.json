@@ -2,8 +2,8 @@
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
   "name": "io.github.sonnyman2014/solana-rent-rug-shield-mcp",
   "title": "Solana Rent & Rug Shield MCP Gateway",
-  "description": "Solana 10-layer token rug audit, CPI tx drain simulator, and ATA rent scanner via x402.",
-  "version": "1.0.1",
+  "description": "Solana 10-layer rug audit, /audit/<mint> feeds, CPI tx sim, and ATA rent scanner via x402.",
+  "version": "1.0.2",
   "websiteUrl": "https://rentandrugshield.com",
   "repository": {
     "url": "https://github.com/sonnyman2014/solana-rent-rug-shield-mcp",
@@ -14,8 +14,22 @@
       "alternateNamespace": "com.rentandrugshield/mcp-server",
       "gatewayUrl": "https://rentandrugshield.com",
       "remoteMcpEndpoint": "https://rentandrugshield.com/mcp",
+      "liveStreamableHttpEndpoint": "https://snake-thinking-latter-players.trycloudflare.com/mcp",
       "wellKnownMcp": "https://rentandrugshield.com/.well-known/mcp.json",
+      "wellKnownMcpServerCard": "https://rentandrugshield.com/.well-known/mcp/server-card.json",
       "wellKnownX402": "https://rentandrugshield.com/.well-known/x402",
+      "liveAuditMintFeedPattern": "https://rentandrugshield.com/audit/{mint}",
+      "liveAuditMintFeeds": [
+        "https://rentandrugshield.com/audit",
+        "https://rentandrugshield.com/audit/8zaYjmVacfAnMhf3cLsECgzK6pLtWrLQbBv65y3vjyR1",
+        "https://rentandrugshield.com/audit/So11111111111111111111111111111111111111112",
+        "https://rentandrugshield.com/audit/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v",
+        "https://rentandrugshield.com/audit/JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN",
+        "https://rentandrugshield.com/audit/DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263"
+      ],
+      "mainnetTestRebate": "Free 10c Solana Mainnet test rebate for external AI agents & MCP builders",
+      "enterpriseApiUrl": "https://rentandrugshield.com/enterprise-api.html",
+      "foundingB2BTier": "$500/mo Unlimited SLA (https://rentandrugshield.com/enterprise-api.html)",
       "distributions": {
         "npm": "@rentandrugshield/mcp-server",
         "pypi": "solana-rug-shield"
@@ -28,6 +42,7 @@
       "x402": {
         "network": "solana:mainnet-beta",
         "freePings": 10,
+        "introSingleScanUsd": "0.10",
         "treasury": "89Sv5FvnMNRid1bn8y2Ti1vJPSxWxgiW9GSLsPpBnKK1",
         "optionA": {
           "id": "option_a_pro_pass",
@@ -41,11 +56,7 @@
           "lamports": 300000,
           "usd": "0.02"
         }
-      },
-      "liveStreamableHttpEndpoint": "https://rolled-raleigh-chair-shakespeare.trycloudflare.com/mcp",
-      "releaseTag": "v1.0.0",
-      "enterpriseApiUrl": "https://rentandrugshield.com/enterprise-api.html",
-      "foundingB2BTier": "$500/mo Unlimited SLA (https://rentandrugshield.com/enterprise-api.html)"
+      }
     }
   },
   "remotes": [
@@ -55,7 +66,7 @@
     },
     {
       "type": "streamable-http",
-      "url": "https://rolled-raleigh-chair-shakespeare.trycloudflare.com/mcp"
+      "url": "https://snake-thinking-latter-players.trycloudflare.com/mcp"
     }
   ]
 }

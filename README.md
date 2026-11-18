@@ -19,6 +19,18 @@ Building a Solana wallet, Telegram sniper bot, copy-trading engine, or DeFi term
 * **Zero Blind Approvals**: 100% read-only token/wallet scanning and unsigned client-verified transaction building.
 * **Enterprise Docs & Onboarding**: [https://rentandrugshield.com/enterprise-api.html](https://rentandrugshield.com/enterprise-api.html) | Live Consumer & Developer Portal: [https://rentandrugshield.com](https://rentandrugshield.com)
 
+## Live `/audit/<mint>` Feeds & 10¢ Mainnet Test Rebate
+
+Every audited Solana token has a direct, crawler-indexable and agent-readable `/audit/<mint>` safety report at `https://rentandrugshield.com/audit/<mint>`:
+
+* **Index Hub**: [https://rentandrugshield.com/audit](https://rentandrugshield.com/audit)
+* **`$VEYRA` (0/100 Unburned LP Drain Catch)**: [https://rentandrugshield.com/audit/8zaYjmVacfAnMhf3cLsECgzK6pLtWrLQbBv65y3vjyR1](https://rentandrugshield.com/audit/8zaYjmVacfAnMhf3cLsECgzK6pLtWrLQbBv65y3vjyR1)
+* **`WSOL` (`So111...1112`)**: [https://rentandrugshield.com/audit/So11111111111111111111111111111111111111112](https://rentandrugshield.com/audit/So11111111111111111111111111111111111111112)
+* **`USDC` (`EPjFW...Dt1v`)**: [https://rentandrugshield.com/audit/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v](https://rentandrugshield.com/audit/EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v)
+* **`$JUP` (`JUPyi...DvCN`)**: [https://rentandrugshield.com/audit/JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN](https://rentandrugshield.com/audit/JUPyiwrYJFskUPiHa7hkeR8VUtAeFoSYbKedZNsDvCN)
+* **`$BONK` (`DezXA...B263`)**: [https://rentandrugshield.com/audit/DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263](https://rentandrugshield.com/audit/DezXAZ8z7PnrnRJjz3wXBoRgixCa6xjnB7YaB1pPB263)
+* **External Agent Builder Rebate**: External AI agent & MCP builders integrating `https://rentandrugshield.com/mcp` or `/audit/<mint>` qualify for a **free `10¢` Solana Mainnet test rebate** on their first verified Mainnet `x402` / `10¢` audit transaction.
+
 ## Zero-Install Remote Streamable HTTP MCP (`https://rentandrugshield.com/mcp`)
 
 Connect any Streamable HTTP MCP client (`Claude`, `Cursor`, `Windsurf`, `Cline`, `OpenAI Agents`, `LangGraph`) directly with **zero local installation**:
