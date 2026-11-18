@@ -1,6 +1,6 @@
 ### Solana Pre-Buy 10-Layer Rug Audits & Zero-Fee Empty ATA SOL Rent Recovery
 
-Prepared by GS. Before entering high-velocity Solana pools or leaving `~0.00203928 SOL` stranded per empty SPL / Token-2022 Associated Token Account (ATA), run a read-only check at **[https://rentandrugshield.com](https://rentandrugshield.com/?utm_source=github_discussion&utm_medium=organic_dev&utm_campaign=nov17_autopsies)** (**1st Rent Claim 100% FREE : 0 lamports platform fee on Claim #1**).
+Before entering high-velocity Solana pools or leaving `~0.00203928 SOL` stranded per empty SPL / Token-2022 Associated Token Account (ATA), run a read-only check at **[https://rentandrugshield.com](https://rentandrugshield.com/?utm_source=github_discussion&utm_medium=organic_dev&utm_campaign=nov17_autopsies)** (**1st Rent Claim 100% FREE : 0 lamports platform fee on Claim #1**).
 
 #### 15 Fresh Technical Rug & Rent-Recovery Dispatches (HTTP 200 Live)
 - **$KATIA** (`5xhuX8VK8k8wGDdfFniWUzUQUSHjzKARosCGtEZypump`): [https://telegra.ph/KATIA-5xhuX8pump-Solana-10-Layer-Rug-Audit--1st-Rent-Claim-100-FREE-Guide-11-18](https://telegra.ph/KATIA-5xhuX8pump-Solana-10-Layer-Rug-Audit--1st-Rent-Claim-100-FREE-Guide-11-18) | [10-Layer Scorecard](https://rentandrugshield.com/audit/5xhuX8VK8k8wGDdfFniWUzUQUSHjzKARosCGtEZypump)
@@ -25,9 +25,9 @@ Prepared by GS. Before entering high-velocity Solana pools or leaving `~0.002039
 - **Streamable HTTP MCP Manifest**: [https://rentandrugshield.com/.well-known/mcp.json](https://rentandrugshield.com/.well-known/mcp.json)
 
 Thank you,
-GS: ### Connect Claude Code, Cursor, or Autonomous Trading Agents to 10-Layer Solana Pre-Buy Checks in <120ms
+### Connect Claude Code, Cursor, or Autonomous Trading Agents to 10-Layer Solana Pre-Buy Checks in <120ms
 
-Prepared by GS. Add `rentandrugshield` to your MCP client configuration to audit SPL / Token-2022 mints (Mint/Freeze authority, `>=95%` LP burn, Token-2022 transfer hooks/permanent delegates, Layer 9 Inner CPI drainer simulation) and scan read-only wallet ATA rent (`1st Rent Claim 100% FREE` at [https://rentandrugshield.com](https://rentandrugshield.com/?utm_source=github_discussion&utm_medium=mcp_showcase)):
+Add `rentandrugshield` to your MCP client configuration to audit SPL / Token-2022 mints (Mint/Freeze authority, `>=95%` LP burn, Token-2022 transfer hooks/permanent delegates, Layer 9 Inner CPI drainer simulation) and scan read-only wallet ATA rent (`1st Rent Claim 100% FREE` at [https://rentandrugshield.com](https://rentandrugshield.com/?utm_source=github_discussion&utm_medium=mcp_showcase)):
 
 ```json
 {
@@ -45,4 +45,3 @@ Prepared by GS. Add `rentandrugshield` to your MCP client configuration to audit
 - **Web Scanner (0 Lamports Platform Fee on Claim #1)**: [https://rentandrugshield.com](https://rentandrugshield.com/?utm_source=github_discussion&utm_medium=mcp_footer)
 
 Thank you,
-GS
