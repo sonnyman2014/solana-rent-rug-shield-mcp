@@ -1,5 +1,16 @@
 # Solana Rent & Rug Shield MCP Gateway (`@rentandrugshield/mcp-server` & `solana-rug-shield`)
 
+
+<!-- PROMO_VIDEO_DUAL_UI_V12 -->
+## 🎬 Watch Official 45s Promo Video & Dual-Mode Solana Security Workspace
+
+- **Official 45s HD Promo Player:** [https://rentandrugshield.com/promo](https://rentandrugshield.com/promo?ref=mcp_readme)
+- **Direct MP4 Video Stream:** [rent_rug_shield_promo_45s.mp4](https://rentandrugshield.com/promo/rent_rug_shield_promo_45s.mp4)
+- **Live Dual-UI Web App (`@SolRentClaim` Emerald/Gold + Institutional Side-by-Side Dark Mode):** [https://rentandrugshield.com](https://rentandrugshield.com/?ref=mcp_readme)
+- **New Layer 12 Live:** Slot-0 Jito Insider Bundle & Cybersecurity Drainer Detection (`Powered by Gemini 4 Carbon AI + 78,000+ Quant Man-Hours`)
+- **Fee Guarantee:** 1st Token Audit & 1st Empty ATA **0.0% Lifetime Free** -> **2.0% SOL Fee** on repeat cleanups (`98.0%` net SOL).
+
+---
 Production Model Context Protocol (`MCP`) security gateway and `x402` Solana machine-payment toolkit powered by [https://rentandrugshield.com](https://rentandrugshield.com). Built for autonomous Solana AI trading agents, IDE copilots, and DeFi wallets requiring `<120ms` pre-buy token rug protection, Layer 9 Inner CPI transaction drainer simulation, and read-only unclaimed ATA SOL rent discovery.
 
 * **Registry Manifests Included**: `server.json` (Official MCP Registry), `smithery.yaml` (Smithery.ai), `glama.json` (Glama.ai), `Dockerfile` (Node >=20 multi-stage container), and `registry/mcp_so_submission.json` (MCP.so).
@@ -314,10 +325,10 @@ if __name__ == "__main__":
 
 ## 5-Line Headless AI Agent `x402` Auto-Pay (`X-Payment-Tx` & MCP `audit_solana_token`)
 
-Funded Solana wallet-agent frameworks (`solana-agent-kit`, ElizaOS `@elizaos/plugin-solana`, Goat SDK `@goat-sdk/wallet-solana`) can purchase **11-Layer Adaptive Solana Rug Shield** audits (now including **Layer 11: Block-0 Sybil Wallet-Cluster & Spoofed Migration LP Guard** powered by Gemini 4 Carbon High) headlessly over HTTP with **zero browser popups**:
+Funded Solana wallet-agent frameworks (`solana-agent-kit`, ElizaOS `@elizaos/plugin-solana`, Goat SDK `@goat-sdk/wallet-solana`) can purchase **12-Layer Adaptive Solana Rug Shield** audits (now including **Layer 11: Block-0 Sybil Wallet-Cluster & Spoofed Migration LP Guard** powered by Gemini 4 Carbon High) headlessly over HTTP with **zero browser popups**:
 
 - **Mainnet Treasury (`payTo`)**: `89Sv5FvnMNRid1bn8y2Ti1vJPSxWxgiW9GSLsPpBnKK1` (`solana:5eykt4UsFv8P8NJdTREpY1vzqKqZKvdp` | USDC ATA `BDFbaZumRyR2ceQfQqVdSXXDbJCDpEgAqgrmiUp92Hp8`)
-- **Pricing Tiers**: `1,400,000` lamports (`~$0.10` Single 11-Layer Audit) or `26,000,000` lamports (`$1.99` 24-Hour Unlimited Pro Pass issuing reusable `X-Pro-Pass-Token`)
+- **Pricing Tiers**: `1,400,000` lamports (`~$0.10` Single 12-Layer Audit) or `26,000,000` lamports (`$1.99` 24-Hour Unlimited Pro Pass issuing reusable `X-Pro-Pass-Token`)
 - **Canonical Spec**: [https://rentandrugshield.com/llms.txt](https://rentandrugshield.com/llms.txt) | **0% 1st-Claim Rent Recovery**: [https://rentandrugshield.com/](https://rentandrugshield.com/)
 
 ### TypeScript (`@solana/web3.js` — 5 Lines)
@@ -325,7 +336,7 @@ Funded Solana wallet-agent frameworks (`solana-agent-kit`, ElizaOS `@elizaos/plu
 import { Connection, PublicKey, SystemProgram, Transaction, sendAndConfirmTransaction } from "@solana/web3.js";
 const mcp = (await (await fetch("https://rentandrugshield.com/.well-known/mcp.json")).json()).liveStreamableHttpEndpoint ?? "https://rentandrugshield.com/mcp";
 const call = (h: Record<string, string> = {}) => fetch(mcp, { method: "POST", headers: { "Content-Type": "application/json", "X-Agent-Id": agentKeypair.publicKey.toBase58(), ...h }, body: JSON.stringify({ jsonrpc: "2.0", id: 1, method: "tools/call", params: { name: "audit_solana_token", arguments: { mint } } }) }).then(r => r.json());
-let audit = await call(); // Set lamports: 1_400_000 (~$0.10 single 11-layer scan) or 26_000_000 ($1.99 24h Unlimited Pass -> X-Pro-Pass-Token)
+let audit = await call(); // Set lamports: 1_400_000 (~$0.10 single 12-layer scan) or 26_000_000 ($1.99 24h Unlimited Pass -> X-Pro-Pass-Token)
 if (audit.error?.httpStatus === 402 || audit.status === 402) { const sig = await sendAndConfirmTransaction(new Connection(rpcUrl, "confirmed"), new Transaction().add(SystemProgram.transfer({ fromPubkey: agentKeypair.publicKey, toPubkey: new PublicKey("89Sv5FvnMNRid1bn8y2Ti1vJPSxWxgiW9GSLsPpBnKK1"), lamports: 1_400_000 })), [agentKeypair]); audit = await call({ "X-Payment-Tx": sig, "X-Solana-Tx-Signature": sig }); }
 ```
 
@@ -334,6 +345,6 @@ if (audit.error?.httpStatus === 402 || audit.status === 402) { const sig = await
 import base64, time, requests; from solders.hash import Hash; from solders.message import Message; from solders.pubkey import Pubkey; from solders.system_program import TransferParams, transfer; from solders.transaction import Transaction
 mcp = requests.get("https://rentandrugshield.com/.well-known/mcp.json", timeout=8).json().get("liveStreamableHttpEndpoint", "https://rentandrugshield.com/mcp")
 call = lambda h={}: requests.post(mcp, headers={"X-Agent-Id": str(kp.pubkey()), **h}, json={"jsonrpc": "2.0", "id": 1, "method": "tools/call", "params": {"name": "audit_solana_token", "arguments": {"mint": mint}}}, timeout=15).json()
-audit = call()  # Set lamports=1_400_000 (~$0.10 single 11-layer audit) or 26_000_000 ($1.99 24h Unlimited Pass -> X-Pro-Pass-Token)
+audit = call()  # Set lamports=1_400_000 (~$0.10 single 12-layer audit) or 26_000_000 ($1.99 24h Unlimited Pass -> X-Pro-Pass-Token)
 if audit.get("error", {}).get("httpStatus") == 402 or audit.get("status") == 402: bh = requests.post(rpc, json={"jsonrpc": "2.0", "id": 1, "method": "getLatestBlockhash", "params": [{"commitment": "confirmed"}]}).json()["result"]["value"]["blockhash"]; sig = requests.post(rpc, json={"jsonrpc": "2.0", "id": 1, "method": "sendTransaction", "params": [base64.b64encode(bytes(Transaction([kp], Message([transfer(TransferParams(from_pubkey=kp.pubkey(), to_pubkey=Pubkey.from_string("89Sv5FvnMNRid1bn8y2Ti1vJPSxWxgiW9GSLsPpBnKK1"), lamports=1_400_000))], kp.pubkey()), Hash.from_string(bh)))).decode(), {"encoding": "base64"}]}).json()["result"]; time.sleep(2.5); audit = call({"X-Payment-Tx": sig, "X-Solana-Tx-Signature": sig})
 ```
