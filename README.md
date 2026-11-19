@@ -348,3 +348,26 @@ call = lambda h={}: requests.post(mcp, headers={"X-Agent-Id": str(kp.pubkey()), 
 audit = call()  # Set lamports=1_400_000 (~$0.10 single 12-layer audit) or 26_000_000 ($1.99 24h Unlimited Pass -> X-Pro-Pass-Token)
 if audit.get("error", {}).get("httpStatus") == 402 or audit.get("status") == 402: bh = requests.post(rpc, json={"jsonrpc": "2.0", "id": 1, "method": "getLatestBlockhash", "params": [{"commitment": "confirmed"}]}).json()["result"]["value"]["blockhash"]; sig = requests.post(rpc, json={"jsonrpc": "2.0", "id": 1, "method": "sendTransaction", "params": [base64.b64encode(bytes(Transaction([kp], Message([transfer(TransferParams(from_pubkey=kp.pubkey(), to_pubkey=Pubkey.from_string("89Sv5FvnMNRid1bn8y2Ti1vJPSxWxgiW9GSLsPpBnKK1"), lamports=1_400_000))], kp.pubkey()), Hash.from_string(bh)))).decode(), {"encoding": "base64"}]}).json()["result"]; time.sleep(2.5); audit = call({"X-Payment-Tx": sig, "X-Solana-Tx-Signature": sig})
 ```
+
+## Gemini 4 Interactions API — On-Demand Tool Retrieval (`defer_loading: true`)
+
+Native support for Google's **Gemini 3.6+ and Gemini 4** Interactions API Tool Retrieval (Nov 2026). Defer all 12-Layer Rug Shield & SOL Rent Cleaner schemas (~26 idle tokens/tool) until needed in one turn:
+
+```python
+from google import genai
+
+client = genai.Client()
+interaction = client.interactions.create(
+    model="gemini-4-carbon",
+    input="Audit this Solana mint across all 12 rug layers and check reclaimable ATA rent.",
+    tools=[
+        {"type": "tool_search"},
+        {
+            "type": "mcp_server",
+            "name": "solana_rent_rug_shield",
+            "url": "https://rentandrugshield.com/mcp",
+            "defer_loading": True,
+        },
+    ],
+)
+```
