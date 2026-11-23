@@ -1,6 +1,6 @@
 # Solana Rent & Rug Shield MCP Gateway (`@rentandrugshield/mcp-server` & `solana-rug-shield`)
 
-[![Solana Rent & Rug Shield MCP connector](https://glama.ai/mcp/connectors/io.github.sonnyman2014/solana-rent-rug-shield-mcp/badges/score.svg)](https://glama.ai/mcp/connectors/io.github.sonnyman2014/solana-rent-rug-shield-mcp)
+[![Glama MCP Score](https://glama.ai/mcp/servers/sonnyman2014/solana-rent-rug-shield-mcp/badges/score.svg)](https://glama.ai/mcp/servers/sonnyman2014/solana-rent-rug-shield-mcp) [![Solana Rent & Rug Shield MCP connector](https://glama.ai/mcp/connectors/io.github.sonnyman2014/solana-rent-rug-shield-mcp/badges/score.svg)](https://glama.ai/mcp/connectors/io.github.sonnyman2014/solana-rent-rug-shield-mcp)
 
 
 <!-- PROMO_VIDEO_DUAL_UI_V12 -->
