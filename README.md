@@ -1,7 +1,8 @@
 # Solana Rent & Rug Shield MCP Gateway (`@rentandrugshield/mcp-server` & `solana-rug-shield`)
 
-[![Glama MCP Score](https://glama.ai/mcp/servers/sonnyman2014/solana-rent-rug-shield-mcp/badges/score.svg)](https://glama.ai/mcp/servers/sonnyman2014/solana-rent-rug-shield-mcp) [![Solana Rent & Rug Shield MCP connector](https://glama.ai/mcp/connectors/io.github.sonnyman2014/solana-rent-rug-shield-mcp/badges/score.svg)](https://glama.ai/mcp/connectors/io.github.sonnyman2014/solana-rent-rug-shield-mcp)
+[![sonnyman2014/solana-rent-rug-shield-mcp MCP server](https://glama.ai/mcp/servers/sonnyman2014/solana-rent-rug-shield-mcp/badges/score.svg)](https://glama.ai/mcp/servers/sonnyman2014/solana-rent-rug-shield-mcp) [![Solana Rent & Rug Shield MCP connector](https://glama.ai/mcp/connectors/io.github.sonnyman2014/solana-rent-rug-shield-mcp/badges/score.svg)](https://glama.ai/mcp/connectors/io.github.sonnyman2014/solana-rent-rug-shield-mcp)
 
+[![solana-rent-rug-shield-mcp MCP server](https://glama.ai/mcp/servers/@sonnyman2014/solana-rent-rug-shield-mcp/badge)](https://glama.ai/mcp/servers/@sonnyman2014/solana-rent-rug-shield-mcp)
 
 <!-- PROMO_VIDEO_DUAL_UI_V12 -->
 ## 🎬 Watch Official 45s Promo Video & Dual-Mode Solana Security Workspace
