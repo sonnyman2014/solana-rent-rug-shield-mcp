@@ -1,6 +1,6 @@
 # Solana Rent & Rug Shield MCP Gateway (`@rentandrugshield/mcp-server` & `solana-rug-shield`)
 
-[![sonnyman2014/solana-rent-rug-shield-mcp MCP server](https://glama.ai/mcp/servers/sonnyman2014/solana-rent-rug-shield-mcp/badges/score.svg)](https://glama.ai/mcp/servers/sonnyman2014/solana-rent-rug-shield-mcp) [![Solana Rent & Rug Shield MCP connector](https://glama.ai/mcp/connectors/io.github.sonnyman2014/solana-rent-rug-shield-mcp/badges/score.svg)](https://glama.ai/mcp/connectors/io.github.sonnyman2014/solana-rent-rug-shield-mcp)
+[![sonnyman2014/solana-rent-rug-shield-mcp MCP server](https://glama.ai/mcp/servers/sonnyman2014/solana-rent-rug-shield-mcp/badges/score.svg)](https://glama.ai/mcp/servers/sonnyman2014/solana-rent-rug-shield-mcp) [![Solana Rent & Rug Shield MCP connector](https://glama.ai/mcp/connectors/com.rentandrugshield/mcp-server/badges/score.svg)](https://glama.ai/mcp/connectors/com.rentandrugshield/mcp-server)
 
 [![solana-rent-rug-shield-mcp MCP server](https://glama.ai/mcp/servers/@sonnyman2014/solana-rent-rug-shield-mcp/badge)](https://glama.ai/mcp/servers/@sonnyman2014/solana-rent-rug-shield-mcp)
 
@@ -108,7 +108,7 @@ pip install https://github.com/sonnyman2014/solana-rent-rug-shield-mcp/releases/
 ### 1. `audit_solana_token_10_layer` (`<120ms` Pre-Buy Token Safety Gate)
 
 * **Purpose**: High-speed `<120ms` warm-socket pre-buy anti-rug safety gate powered by persistent HTTP keep-alive connection pooling for autonomous sniper bots, DeFi execution agents, and trading terminals.
-* **10 Security Layers Evaluated**: Mint authority status, freeze authority status, Token-2022 permanent delegate hooks, Token-2022 transfer fee mutations, non-transferable / close-authority traps, liquidity pool lock and burn ratio, top holder cluster concentration, metadata mutability, creator rug history, and live sellability verification (returning a `0` to `100` safety score plus actionable risk flags).
+* **12 Security Layers Evaluated** (tool identifier preserved as `audit_solana_token_10_layer` / alias `audit_solana_token` for backward compatibility): Mint authority status, freeze authority status, Token-2022 permanent delegate hooks, Token-2022 transfer fee mutations, non-transferable / close-authority traps, liquidity pool lock and burn ratio, top holder cluster concentration, metadata mutability, creator rug history, live Jupiter sellability verification, **Layer 11 Block-0 2-Hop Sybil Funding Graph BFS**, and **Layer 12 Slot-0 Jito Insider Bundle & Inner-CPI Drainer Detection** (returning a `0` to `100` safety score plus actionable risk flags).
 * **Inputs**: `mint` (required base58 mint address), optional `pool_address`, `wallet`, `payment_signature`, `pro_pass_token`.
 
 ### 2. `simulate_solana_tx_drain` (Layer 9 Inner CPI Drainer Check)
@@ -120,7 +120,7 @@ pip install https://github.com/sonnyman2014/solana-rent-rug-shield-mcp/releases/
 ### 3. `scan_wallet_unclaimed_sol` (Read-Only ATA Rent Check)
 
 * **Purpose**: Zero-custody, strictly read-only Mainnet wallet scanner that discovers reclaimable rent-exempt SOL locked in empty SPL (`Tokenkeg`) and `Token-2022` Associated Token Accounts (`ATAs`), dust accounts, and PumpSwap / Pump volume accumulator PDAs.
-* **Safety Guarantee**: Requires only a public base58 `wallet` address; never requests private keys for scanning and reports exact account counts plus net reclaimable SOL (`95%` user payout structure on [https://rentandrugshield.com](https://rentandrugshield.com)).
+* **Safety Guarantee**: Requires only a public base58 `wallet` address; never requests private keys for scanning and reports exact account counts plus net reclaimable SOL (`0.0%` fee / `100%` SOL kept on 1st claim and `98.0%` net SOL kept on repeat cleanups via native SPL `0x09` on [https://rentandrugshield.com](https://rentandrugshield.com)).
 * **Inputs**: `wallet` (required base58 wallet address), optional `include_token_2022` (boolean, default `true`), `payment_signature`, `pro_pass_token`.
 
 ## 10 Free Pings + Native Solana `x402` Machine Auto-Pay
