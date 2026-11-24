@@ -3,7 +3,7 @@
 * **Name:** Solana Rent and Rug Shield MCP Gateway
 * **Type:** Remote MCP server (Streamable HTTP) and Local Stdio (`npx` and `pip`)
 * **Description:** Production Solana security MCP server delivering a `<120ms` 10-layer pre-buy token anti-rug safety gate (`audit_solana_token_10_layer`), Layer 9 Inner CPI transaction drainer simulator (`simulate_solana_tx_drain`), and strictly read-only SPL and Token-2022 unclaimed ATA SOL rent scanner (`scan_wallet_unclaimed_sol`) with 10 free pings and native Solana `x402` machine auto-pay.
-* **Endpoint:** https://rentandrugshield.com/mcp (and live dynamic Streamable HTTP transport https://rolled-raleigh-chair-shakespeare.trycloudflare.com/mcp)
+* **Endpoint:** https://rentandrugshield.com/mcp (and live Streamable HTTP transport https://rent-shield-api.104-197-102-151.sslip.io/mcp)
 * **Official MCP Registry:** `com.rentandrugshield/mcp-server` and `io.github.sonnyman2014/solana-rent-rug-shield-mcp`
 * **Authentication:** None required for 10 free pings per `X-Agent-Id`; automatic Solana `x402` V1 and V2 (`PAYMENT-SIGNATURE` and `X-Payment`) settlement after free tier
 * **Homepage:** https://rentandrugshield.com

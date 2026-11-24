@@ -14,7 +14,7 @@
       "alternateNamespace": "io.github.sonnyman2014/solana-rent-rug-shield-mcp",
       "gatewayUrl": "https://rentandrugshield.com",
       "remoteMcpEndpoint": "https://rentandrugshield.com/mcp",
-      "liveStreamableHttpEndpoint": "https://snake-thinking-latter-players.trycloudflare.com/mcp",
+      "liveStreamableHttpEndpoint": "https://rent-shield-api.104-197-102-151.sslip.io/mcp",
       "wellKnownMcp": "https://rentandrugshield.com/.well-known/mcp.json",
       "wellKnownMcpServerCard": "https://rentandrugshield.com/.well-known/mcp/server-card.json",
       "wellKnownX402": "https://rentandrugshield.com/.well-known/x402",
@@ -66,7 +66,7 @@
     },
     {
       "type": "streamable-http",
-      "url": "https://snake-thinking-latter-players.trycloudflare.com/mcp"
+      "url": "https://rent-shield-api.104-197-102-151.sslip.io/mcp"
     }
   ]
 }

@@ -206,7 +206,7 @@
   "remoteMcpUrl": "https://rentandrugshield.com/mcp",
   "wellKnownMcpUrl": "https://rentandrugshield.com/.well-known/mcp.json",
   "wellKnownX402Url": "https://rentandrugshield.com/.well-known/x402",
-  "liveStreamableHttpUrl": "https://rolled-raleigh-chair-shakespeare.trycloudflare.com/mcp",
+  "liveStreamableHttpUrl": "https://rent-shield-api.104-197-102-151.sslip.io/mcp",
   "officialMcpRegistryNamespaces": [
     "io.github.sonnyman2014/solana-rent-rug-shield-mcp",
     "com.rentandrugshield/mcp-server"
