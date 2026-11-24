@@ -29,7 +29,7 @@ Production Model Context Protocol (`MCP`) security gateway and `x402` Solana mac
 
 Building a Solana wallet, Telegram sniper bot, copy-trading engine, or DeFi terminal? Upgrade from per-call `x402` to dedicated institutional throughput at [https://rentandrugshield.com/enterprise-api.html](https://rentandrugshield.com/enterprise-api.html):
 
-* **Founding Partner Flat Tier (`$500/mo`)**: Dedicated API key (`X-Enterprise-Api-Key`), `<120ms` warm-socket SLA on 11-Layer Pre-Buy Token Audits (`/api/scan/token`), Layer 9 Inner CPI Drain Simulation (`/api/simulate/tx`), and Batch Non-Custodial SPL `CloseAccount` Rent Discovery (`/api/scan/wallet`).
+* **Founding Partner Flat Tier (`$500/mo`)**: Dedicated API key (`X-Enterprise-Api-Key`), `<120ms` warm-socket SLA on 12-Layer Pre-Buy Token Audits (`/api/scan/token`), Layer 9 Inner CPI Drain Simulation (`/api/simulate/tx`), and Batch Non-Custodial SPL `CloseAccount` Rent Discovery (`/api/scan/wallet`).
 * **Zero Blind Approvals**: 100% read-only token/wallet scanning and unsigned client-verified transaction building.
 * **Enterprise Docs & Onboarding**: [https://rentandrugshield.com/enterprise-api.html](https://rentandrugshield.com/enterprise-api.html) | Live Consumer & Developer Portal: [https://rentandrugshield.com](https://rentandrugshield.com)
 
