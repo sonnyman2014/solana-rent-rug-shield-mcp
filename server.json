@@ -14,7 +14,7 @@
       "alternateNamespace": "com.rentandrugshield/mcp-server",
       "gatewayUrl": "https://rentandrugshield.com",
       "remoteMcpEndpoint": "https://rentandrugshield.com/mcp",
-      "liveStreamableHttpEndpoint": "https://snake-thinking-latter-players.trycloudflare.com/mcp",
+      "liveStreamableHttpEndpoint": "https://unlike-advised-distances-recipient.trycloudflare.com/mcp",
       "wellKnownMcp": "https://rentandrugshield.com/.well-known/mcp.json",
       "wellKnownMcpServerCard": "https://rentandrugshield.com/.well-known/mcp/server-card.json",
       "wellKnownX402": "https://rentandrugshield.com/.well-known/x402",
@@ -62,11 +62,11 @@
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://rentandrugshield.com/mcp"
+      "url": "https://unlike-advised-distances-recipient.trycloudflare.com/mcp"
     },
     {
       "type": "streamable-http",
-      "url": "https://snake-thinking-latter-players.trycloudflare.com/mcp"
+      "url": "https://rentandrugshield.com/mcp"
     }
   ]
 }
