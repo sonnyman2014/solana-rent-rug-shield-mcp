@@ -1,4 +1,4 @@
-[![sonnyman2014/solana-rent-rug-shield-mcp MCP server](https://glama.ai/mcp/servers/sonnyman2014/solana-rent-rug-shield-mcp/badges/score.svg)](https://glama.ai/mcp/servers/sonnyman2014/solana-rent-rug-shield-mcp)
+[![M8ven Verified](https://m8ven.ai/badge/mcp/sonnyman2014/solana-rent-rug-shield-mcp?variant=verified)](https://m8ven.ai/mcp/sonnyman2014/solana-rent-rug-shield-mcp?s=readme) [![sonnyman2014/solana-rent-rug-shield-mcp MCP server](https://glama.ai/mcp/servers/sonnyman2014/solana-rent-rug-shield-mcp/badges/score.svg)](https://glama.ai/mcp/servers/sonnyman2014/solana-rent-rug-shield-mcp)
 
 # Solana Rent & Rug Shield MCP Gateway (`@rentandrugshield/mcp-server` & `solana-rug-shield`)
 
